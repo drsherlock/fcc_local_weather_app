@@ -1,0 +1,67 @@
+html,
+body {
+  text-align: center;
+  min-height: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Denk One', sans-serif;
+  color: #ffa500;
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 40px;
+  text-shadow: 4px 4px 2px #e24;
+}
+
+#location {
+  font-size: 1.5em;
+  color: #dd1;
+  text-shadow: 3px 3px 2px #a73;
+}
+
+#weather {
+  font-size: 3em;
+  margin-top: 15px;
+  color: #AA4;
+  text-shadow: 3px 3px 2px #a74;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 10px 10px 10px;
+  margin-right: 5px;
+  marin-left: 5px;
+}
+
+.btn {
+  background: #50aade;
+  background-image: -webkit-linear-gradient(top, #50aade, #0477bf);
+  background-image: -moz-linear-gradient(top, #50aade, #0477bf);
+  background-image: -ms-linear-gradient(top, #50aade, #0477bf);
+  background-image: -o-linear-gradient(top, #50aade, #0477bf);
+  background-image: linear-gradient(to bottom, #50aade, #0477bf);
+  -webkit-border-radius: 54;
+  -moz-border-radius: 54;
+  border-radius: 54px;
+  -webkit-box-shadow: 4px 4px 2px #59889e;
+  -moz-box-shadow: 4px 4px 2px #59889e;
+  box-shadow: 4px 4px 2px #59889e;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  background: #ffa500;
+  text-decoration: none;
+  color: #50aade;
+  opacity: 1;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+.selected {
+  border: solid #aaaa44 4px;
+}
