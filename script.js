@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function getLocation() {
   var myCity;
-  $.getJSON("http://www.telize.com/geoip?callback=?",
+  $.get("http://ipinfo.io",
     function(json) {
       $('#location').html(json.city);
       myCity = json.city;
