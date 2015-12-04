@@ -17,15 +17,15 @@ function getLocation() {
 function getWeather(city) {
   $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=724737d8d4c9084c2bdde34abbd9b386",
     function(json) {
-      $('#weather').html(json.main.temp + "&deg;C"),      $('#cel').addClass('selected'), 
-$('#icon').append("<img src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png'>");
+      $('#weather').html(json.main.temp + "&deg;C"), $('#cel').addClass('selected'),
+        $('#icon').append("<img src='http://openweathermap.org/img/w/" + json.weather[0].icon + ".png'>");
     }
   );
 
   $('#fah').click(function() {
     $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=724737d8d4c9084c2bdde34abbd9b386",
       function(json) {
-        $('#weather').html(json.main.temp + "&deg;F"),          $('#fah').addClass('selected'), $('#cel').removeClass('selected');
+        $('#weather').html(json.main.temp + "&deg;F"), $('#fah').addClass('selected'), $('#cel').removeClass('selected');
       }
     );
   });
