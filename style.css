@@ -36,6 +36,7 @@ button {
 }
 
 .btn {
+  color: #ffa500 !important;
   background: #50aade;
   background-image: -webkit-linear-gradient(top, #50aade, #0477bf);
   background-image: -moz-linear-gradient(top, #50aade, #0477bf);
@@ -54,14 +55,17 @@ button {
 }
 
 .btn:hover {
+  color: #50aade !important;
   background: #ffa500;
   text-decoration: none;
-  color: #50aade;
   opacity: 1;
 }
-.btn:focus,.btn:active {
-   outline: none !important;
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
 }
+
 .selected {
   border: solid #aaaa44 4px;
 }
