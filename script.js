@@ -6,11 +6,11 @@ function getLocation() {
   var myCity;
   $.get("http://ipinfo.io",
     function(json) {
-      $('#location').html(json.city);
       myCity = json.city;
+      $('#location').html(myCity);
       setBackground(myCity);
       getWeather(myCity);
-    }
+    }, "jsonp"
   );
 }
 
